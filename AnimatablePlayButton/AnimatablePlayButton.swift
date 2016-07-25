@@ -45,19 +45,19 @@ public class AnimatablePlayButton: UIButton {
     public override func awakeFromNib() {
         super.awakeFromNib()
         setup()
-        createLayers(frame)
+        // createLayers(frame)
     }
     
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
-        createLayers(frame)
+        // createLayers(frame)
     }
     
     override public required init(frame: CGRect) {
         super.init(frame: frame)
         setup()
-        createLayers(frame)
+        // createLayers(frame)
     }
     
     convenience public init(origin: CGPoint, lengthOfSize: CGFloat){
@@ -75,7 +75,7 @@ public class AnimatablePlayButton: UIButton {
         color = .whiteColor()
     }
     
-    private func createLayers(frame: CGRect) {
+    public func createLayers(frame: CGRect) {
         
         let pauseLineWidth:CGFloat = bounds.width/5
         let pauseLine:CGFloat = pauseLineWidth * 2
